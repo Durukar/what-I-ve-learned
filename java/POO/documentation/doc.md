@@ -21,5 +21,25 @@ Enter the measures of triangle Y:
 4.02
 Triangle X area: 6.0000
 Triangle Y area: 7.5638
-Larger area: Y
+Larger area:
 ```
+
+<h1>CLASSE
+
+* É um tipo estruturado que pode conter (membros):
+  * Atributos (dados/ campos)
+  * Métodos (funções / operações)
+* A classe também pode prover muitos outros recursos, tais como:
+  * Construtores
+  * Sobrecarga
+  * Encapsulamento
+  * Herança
+  * Polimorfismo
+* Exemplos:
+  * Entidades: Produto, Cliente, Triangulo
+  * Serviços: ProdutoService, ClienteService, EmailService, StorageService
+  * Controladores: ProdutoController, ClienteController
+  * Utilitários: Calculadora, Compactador
+  * Outros (views, repositórios, gerenciadores, etc.)
+
+![1688652289252](image/doc/1688652289252.png)
