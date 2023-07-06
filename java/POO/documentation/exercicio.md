@@ -13,3 +13,5 @@ Para resolver este problema, você deve criar uma CLASSE conforme projeto abaixo
 ![1688670337262](image/exercicio/1688670337262.png)
 
 ![1688673971268](image/exercicio/1688673971268.png)
+
+![1688681176217](image/exercicio/1688681176217.png)
