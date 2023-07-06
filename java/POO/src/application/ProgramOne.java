@@ -31,8 +31,8 @@ public class ProgramOne {
         p = (yA + yB + yC) / 2.0;
         areaY  = Math.sqrt(p * (p - yA) * (p - yB) * (p - yC));
 
-        System.out.printf("Triangle X area: %.4f%n", areaX);
-        System.out.printf("Triangle Y area: %.4f%n", areaY);
+        System.out.printf("TriangleEntity X area: %.4f%n", areaX);
+        System.out.printf("TriangleEntity Y area: %.4f%n", areaY);
 
         if (areaX > areaY) {
             System.out.println("Larger area: X");

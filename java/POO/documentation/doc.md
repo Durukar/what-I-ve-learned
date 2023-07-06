@@ -43,3 +43,19 @@ Larger area:
   * Outros (views, repositórios, gerenciadores, etc.)
 
 ![1688652289252](image/doc/1688652289252.png)
+
+Detalhe do codigo![1688660111372](image/doc/1688660111372.png)
+
+
+UML - Projeto de clase
+
+![1688665062127](image/doc/1688665062127.png)
+
+<h1>Discussão
+
+
+Quais são os benefícios de se calcular a área de uma triângulo por meio de um MÉTODO dentro da CLASSE Triangle?
+
+**1) Reaproveitamento de código:** Nós eliminamos o código repetido (cálculo das áreas dos triângulos x e y) no programa principal.
+
+**2) Delegação de responsabilidades:** Quem deve ser responsável por saber como calcular a área de um triângulo é o próprio triângulo. A lógica do cálculo da área não deve estar em outro lugar.
