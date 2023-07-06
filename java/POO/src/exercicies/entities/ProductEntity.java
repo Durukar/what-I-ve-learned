@@ -37,4 +37,14 @@ public class ProductEntity {
     public int setQuantity() {
         return quantity = sc.nextInt();
     }
+
+    public String toString() {
+        return name
+                + ", $ "
+                + String.format("%.2f", price)
+                + ", "
+                + quantity
+                + " units, Total: $ "
+                + String.format("%.2f", totalValueInStock());
+    }
 }

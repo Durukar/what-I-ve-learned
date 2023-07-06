@@ -19,7 +19,9 @@ public class ProductApp {
         product.setPrice();
         System.out.print("Quantity in stock: ");
         product.setQuantity();
-        product.produtoPrint();
+    //    product.produtoPrint();
+
+        System.out.println(product);
 
         sc.close();
     }
