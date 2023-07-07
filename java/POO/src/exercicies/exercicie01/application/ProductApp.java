@@ -1,6 +1,6 @@
-package exercicies.application;
+package exercicies.exercicie01.application;
 
-import exercicies.entities.ProductEntity;
+import exercicies.exercicie01.entities.ProductEntity;
 
 import java.util.Locale;
 import java.util.Scanner;
