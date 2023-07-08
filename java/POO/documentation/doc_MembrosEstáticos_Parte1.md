@@ -11,3 +11,23 @@
 <h2>Problema exemplo
 
 Fazer um progama para ler um valor numérico qualquer, e dai mostrar quanto seria o valor de uma circunferência e do volume de uma esfera para um raio daquele valor. Informar também o valor de PI com duas casas decimais.
+
+![1688815422493](image/doc_MembrosEstáticos/1688815422493.png)
+
+<h3>Checklist
+
+* Versão 1: métodos na própria classe do programa
+  * Nota: dentro de um método estático você não pode chamar membros de instância da mesma classe.
+* Versão 2: classe Calculator com membros de instância
+* Versão 3: classe Calculator com método estático
+
+
+<h2>Versão 1
+
+![1688816361144](image/doc_MembrosEstáticos/1688816361144.png)
+
+<h1>Versão 2
+
+![1688816705456](image/doc_MembrosEstáticos/1688816705456.png)
+
+![1688816729409](image/doc_MembrosEstáticos/1688816729409.png)
