@@ -1,4 +1,4 @@
-package sobrecarga.entities;
+package exercicies.exercicieModulo09.entities;
 
 public class ProductEntity {
     private String name;
