@@ -1,9 +1,6 @@
 package sobrecarga.entities;
 
-import java.util.Scanner;
-
 public class ProductEntity {
-    Scanner sc = new Scanner(System.in);
     private String name;
     private double price;
     private int quantity;
@@ -20,13 +17,25 @@ public class ProductEntity {
         this.name = name;
         this.price = price;
     }
-    public void produtoPrint() {
-        System.out.print("Product is: ");
-        System.out.println(name + ", "+ price + ", "+ quantity);
+
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String setName() {
-        return name = sc.next();
+    public String getName(){
+        return name;
+    }
+
+    public double getPrice(){
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getQuantity() {
+        return quantity;
     }
 
     public double totalValueInStock() {
@@ -41,15 +50,6 @@ public class ProductEntity {
         this.quantity = this.quantity - quantity;
         System.out.println("A quantidade de produtos agora é -> " + this.quantity);
     }
-
-    public double setPrice() {
-        return price = sc.nextDouble();
-    }
-
-    public int setQuantity() {
-        return quantity = sc.nextInt();
-    }
-
     public String toString() {
         return name
                 + ", $ "
