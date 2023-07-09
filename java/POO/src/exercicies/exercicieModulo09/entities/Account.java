@@ -50,9 +50,9 @@ public class Account {
     public String toString(){
         return "Account data: "
                 + System.lineSeparator()
-                + "Account"
+                + "Account: "
                 + accountNumber
-                + ", "
+                + ", Holder: "
                 + accountName
                 + ", "
                 + "Balance: $ "

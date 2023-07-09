@@ -29,6 +29,7 @@ public class BankApp {
         account.firstDeposit(reponse.toLowerCase());
 
         // account print
+        System.out.println(" ");
         System.out.println(account);
         System.out.println(" ");
 
@@ -36,6 +37,7 @@ public class BankApp {
         System.out.print("Enter a deposit value: ");
         double value = sc.nextDouble();
         account.depositBalance(value);
+        System.out.println("Updated account data: ");
         System.out.println(account);
 
         // account Withdraw
@@ -43,6 +45,9 @@ public class BankApp {
         System.out.print("Enter a withdraw value: ");
         value = sc.nextDouble();
         account.withdrawBalance(value);
+        System.out.println("Updated account data: ");
         System.out.println(account);
+
+        sc.close();
     }
 }
