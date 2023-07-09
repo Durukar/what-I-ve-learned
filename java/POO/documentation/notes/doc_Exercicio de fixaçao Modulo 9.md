@@ -1,6 +1,13 @@
+---
+title: doc_Exercicio de fixaçao Modulo 9
+tags: [Import-c91f]
+created: '2023-07-08T22:35:36.364Z'
+modified: '2023-07-08T22:41:41.478Z'
+---
+
 <h1> Exercicio de fixaçao Modulo 9
 
-Em um banco, para se cadastrar uma conta bancária, é necessário informar o número da conta, o nome do titular da conta, e o valor de depósito inicial que o titular depositou ao abrir a conta. Este valor de depósito inicia, entretanto, é opcional, ou seja: se o titula não tiver dinheiro a depositar no momento de abrir sua conta, o depósito inicial não será feito e o saldo inicial da conta será, naturalmente, zero.
+Em um banco, para se cadastrar uma conta bancária, é necessário informar o número da conta, o nome do titular da conta, e o valor de depósito inicial que o titular depositoou ao abrir a conta. Este valor de depósito inicia, entretanto, é opcionao, ou seja: se o titula não tiver dinheiro a depositar no momento de abrir sua conta, o depósito inicial não será feito e o saldo inicial da conta será, naturalmente, zero.
 
 Importante: uma vez que a conta bancária foi aberta, o número da conta nunca poderá ser alterado. Já o nome do titular pode ser alterado( poius uma pessoa pode mudar de nome por ocasião de casamento, por exemplo).
 
