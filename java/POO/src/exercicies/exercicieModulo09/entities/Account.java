@@ -17,20 +17,24 @@ public class Account {
         return accountNumber;
     }
 
-    public void setAccountNumber(int accountNumber) {
-        this.accountNumber = accountNumber;
-    }
 
     public String getAccountName() {
         return accountName;
     }
 
-    public void withdrawBalance(double value) {
-        
+    public void setAccountName(String accountName) {
+        this.accountName = accountName;
     }
 
-    public void setAccountBalance(double accountBalance) {
-        this.accountBalance = accountBalance;
+    public double getAccountBalance() {
+        return accountBalance;
+    }
+
+    public void depositBalance(double value) {
+        accountBalance = accountBalance + value;
+    }
+    public void withdrawBalance(double value) {
+        accountBalance = accountBalance - (value + 5.00);
     }
 
     public void firstDeposit(String response){
