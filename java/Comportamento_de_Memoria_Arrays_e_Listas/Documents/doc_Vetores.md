@@ -7,7 +7,6 @@
 * Acesso aos elementos
 * Propriedade length
 
-
 <h1> Vetores
 
 * Em programação, "vetor" é o noome dado a arranjos unidimensionais
@@ -32,3 +31,14 @@ Fazer um programa para ler um número N e a altura de N pessoas. Armazene as N a
 ![1688920714626](image/doc_Vetores/1688920714626.png)
 
 ![1688921521315](image/doc_Vetores/1688921521315.png)
+
+
+<h1> Problema exemplo 2
+
+Fazer um programa para ler um número inteiro N e os dados (nome e preço) de N Produtops. Armazene os N produtos em um vetor. Em seguida, mostrar o preço médio dos produtos.
+
+Example:
+
+![1689011194551](image/doc_Vetores/1689011194551.png)
+
+![1689011405512](image/doc_Vetores/1689011405512.png)
