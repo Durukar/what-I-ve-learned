@@ -25,6 +25,18 @@ export function Post() {
           <a href="">#3.27.1</a>{' '}
         </p>
       </div>
+
+      <form className={styles.commentForm} >
+        <strong>Comente sobre o Ticket</strong>
+
+        <textarea
+          placeholder="Digite"
+        />
+
+        <footer>
+          <button type="submit">Publicar</button>
+        </footer>
+      </form>
     </article>
   )
 }
