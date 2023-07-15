@@ -1,9 +1,11 @@
 import headerStyle from './Header.module.css'
 
+import flamengoLogo from '../../assets/jira-logo.png'
+
 export function Header() {
   return(
     <header className={headerStyle.header}>
-      <strong>Flamengo APP</strong>
+      <img src={flamengoLogo} alt="Logotipo" />
     </header>
   );
 }
