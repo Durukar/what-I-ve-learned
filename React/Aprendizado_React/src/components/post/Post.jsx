@@ -9,9 +9,7 @@ import { useState } from 'react';
 // estado = variáveis que eu quero que o componente monitore
 
 export function Post({ author, publishedAt, content }) {
-  const [comments, setComments] = useState([
-    'Ja tentou Verificar o Public_URL do connector?'
-  ])
+  const [comments, setComments] = useState([])
   const [newCommentText, setNewCommentText] = useState('');
 
   const publishedDateFormatted = format(publishedAt,"d 'de' LLLL 'ás' HH:mm'h'", { locale: ptBR })
