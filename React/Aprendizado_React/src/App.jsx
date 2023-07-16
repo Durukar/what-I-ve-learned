@@ -19,9 +19,9 @@ const posts = [
       role: 'Snews Developer'
     },
     content: [
-      { type: 'link', content: <a href="#">Cliente</a>},
-      { type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam enim, quod nobis eaque tempore nemo veniam nesciunt soluta. Iure laborum, obcaecati perferendis eaque quisquam quo maxime at aspernatur aliquam vitae.'},    
-      { type: 'link', content: <a href="#">ticket.issue/id</a>}      
+      { type: 'link', content: 'Cliente'},
+      { type: 'paragraph', content: 'Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Quisquam enim, quod nobis eaque tempore nemo veniam nesciunt soluta. Iure laborum, obcaecati perferendis eaque quisquam quo maxime at aspernatur aliquam vitae.'},    
+      { type: 'link', content: 'ticket.issue/id'}      
     ],
     publishedAt: new Date('2023-07-16 09:09:00'),
   },
@@ -33,9 +33,9 @@ const posts = [
       role: 'Scrum Master'
     },
     content: [
-      { type: 'link', content: <a href="">Cliente</a>},
+      { type: 'link', content: 'Cliente'},
       { type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam enim, quod nobis eaque tempore nemo veniam nesciunt soluta. Iure laborum, obcaecati perferendis eaque quisquam quo maxime at aspernatur aliquam vitae.'},    
-      { type: 'link', content: <a href="">ticket.issue/id</a>}      
+      { type: 'link', content: 'ticket.issue/id'}      
     ],
     publishedAt: new Date('2023-07-15 10:09:00'),
   },
@@ -53,7 +53,8 @@ export function App() {
         <main>
           {posts.map(post => {
             return (
-              <Post 
+              <Post
+                key={post.id}
                 author={post.author}
                 content={post.content}
                 publishedAt={post.publishedAt}
