@@ -1,4 +1,4 @@
-import { format, formatDistanceToNow } from 'date-fns';
+import { format, formatDistanceToNow} from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR'
 
 import { Avatar } from '../avatar/Avatar'
@@ -10,9 +10,10 @@ import { useState } from 'react';
 
 export function Post({ author, publishedAt, content }) {
   const [comments, setComments] = useState([
-    1,
-    2,
+    'Ja tentou Verificar o Public_URL do connector?'
   ])
+
+  const [newCommentText, setNewCommentText] = useState('');
 
   const publishedDateFormatted = format(publishedAt,"d 'de' LLLL 'ás' HH:mm'h'", { locale: ptBR })
 
@@ -21,10 +22,12 @@ export function Post({ author, publishedAt, content }) {
 
   function handleCreateNewComment(){
     event.preventDefault();
+    setComments([...comments, newCommentText]);
+    setNewCommentText('');
+  }
 
-    // Imutabilidade
-
-    setComments([...comments, comments.length + 1]);
+  function handleNewCommentChange() {
+    setNewCommentText(event.target.value);
   }
 
   return (
@@ -55,7 +58,10 @@ export function Post({ author, publishedAt, content }) {
         <strong>Comente sobre o Ticket</strong>
 
         <textarea
+          name="comment"
           placeholder="Digite"
+          value={newCommentText}
+          onChange={handleNewCommentChange}
         />
 
         <footer>
@@ -64,7 +70,7 @@ export function Post({ author, publishedAt, content }) {
       </form>
       <div className={styles.commentList}>
         {comments.map(comment => {
-          return <Comment />
+          return <Comment content={comment}/>
         })
         }
       </div>

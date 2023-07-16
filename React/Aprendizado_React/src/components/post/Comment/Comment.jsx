@@ -2,7 +2,7 @@ import { ThumbsUp, Trash } from 'phosphor-react';
 import styles from './Comment.module.css'
 import { Avatar } from '../../avatar/Avatar';
 
-export function Comment() {
+export function Comment({content}) {
   return (
     <div className={styles.comment}>
       <Avatar hasBorder={false} src="https://github.com/durukar.png"/>
@@ -20,7 +20,7 @@ export function Comment() {
             </button>
           </header>
 
-          <p>O problema esta no item X do connector!</p>
+          <p>{content}</p>
         </div>
 
         <footer>
