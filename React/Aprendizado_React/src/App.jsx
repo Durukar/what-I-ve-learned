@@ -13,31 +13,31 @@ import { Post } from './components/post/Post';
 const posts = [
   {
     id: 1,
-    authro: {
+    author: {
       avatarUrl: 'https://github.com/durukar.png',
       name: 'Lucas Davila',
       role: 'Snews Developer'
     },
     content: [
-      { type: 'link', content: '<a href="">Cliente</a>>'},
+      { type: 'link', content: <a href="#">Cliente</a>},
       { type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam enim, quod nobis eaque tempore nemo veniam nesciunt soluta. Iure laborum, obcaecati perferendis eaque quisquam quo maxime at aspernatur aliquam vitae.'},    
-      { type: 'link', content: '<a href="">ticket.issue/id</a>'}      
+      { type: 'link', content: <a href="#">ticket.issue/id</a>}      
     ],
-    publishedAt: new Date('2023-07-16 10:09:00'),
+    publishedAt: new Date('2023-07-16 09:09:00'),
   },
   {
     id: 2,
-    authro: {
-      avatarUrl: 'https://github.com/durukar.png',
+    author: {
+      avatarUrl: 'https://github.com/diego3.png',
       name: 'Joao Cerafin',
       role: 'Scrum Master'
     },
     content: [
-      { type: 'link', content: '<a href="">Cliente</a>>'},
+      { type: 'link', content: <a href="">Cliente</a>},
       { type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam enim, quod nobis eaque tempore nemo veniam nesciunt soluta. Iure laborum, obcaecati perferendis eaque quisquam quo maxime at aspernatur aliquam vitae.'},    
-      { type: 'link', content: '<a href="">ticket.issue/id</a>'}      
+      { type: 'link', content: <a href="">ticket.issue/id</a>}      
     ],
-    publishedAt: new Date('2023-07-18 10:09:00'),
+    publishedAt: new Date('2023-07-15 10:09:00'),
   },
 ];
 
