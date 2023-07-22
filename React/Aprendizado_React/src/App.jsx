@@ -19,9 +19,9 @@ const posts = [
       role: 'Snews Developer'
     },
     content: [
-      { type: 'link', content: 'Cliente'},
+      { type: 'link', content: 'Cliente <- Modal do cliente'},
       { type: 'paragraph', content: 'Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Quisquam enim, quod nobis eaque tempore nemo veniam nesciunt soluta. Iure laborum, obcaecati perferendis eaque quisquam quo maxime at aspernatur aliquam vitae.'},    
-      { type: 'link', content: 'ticket.issue/id'}      
+      { type: 'link', content: 'ticket.issue/id <- Modal do ticket e endpoint da API'}      
     ],
     publishedAt: new Date('2023-07-16 09:09:00'),
   },
@@ -33,9 +33,9 @@ const posts = [
       role: 'Scrum Master'
     },
     content: [
-      { type: 'link', content: 'Cliente'},
+      { type: 'link', content: 'Cliente <- Modal do cliente'},
       { type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam enim, quod nobis eaque tempore nemo veniam nesciunt soluta. Iure laborum, obcaecati perferendis eaque quisquam quo maxime at aspernatur aliquam vitae.'},    
-      { type: 'link', content: 'ticket.issue/id'}      
+      { type: 'link', content: 'ticket.issue/id <- Modal do ticket e endpoint da API'}      
     ],
     publishedAt: new Date('2023-07-15 10:09:00'),
   },

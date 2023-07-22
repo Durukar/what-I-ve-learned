@@ -2,8 +2,12 @@ import { PencilLine } from 'phosphor-react'
 
 import stylesSidebar from './Sidebar.module.css'
 import { Avatar } from '../avatar/Avatar'
+import { Modal } from './modal/Modal'
+import { useState } from 'react'
 
 export function Sidebar() {
+  const[openModal, setOpenModal] = useState(false)
+
   return (
     <aside className={stylesSidebar.sidebar}>
       <img 
@@ -16,9 +20,13 @@ export function Sidebar() {
         <span>Snews Developer</span>
       </div>
       <footer>
-        <a href="#">
+        <a onClick={() => setOpenModal(true)} href="#">
+          {console.log(openModal)}
           <PencilLine size={20} />
-          Editar seu perfil
+          <span>Abrir Ticket</span>
+          <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
+            Conteúdo do Modal
+          </Modal>
         </a>
       </footer>
     </aside>
