@@ -15,17 +15,24 @@ import { DrawerDioBank } from '../Drawer/DrawerDioBank'
 import { useState, useEffect } from "react";
 import {api} from '../../api/api'
 
-export function Form() {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+interface UserData {
+  email:string
+  password: string
+  name: string
+}
 
-  useEffect(() =>{
-    const getData = async () => {
-      const data = await api
-      console.log(data)
-    }
-    getData()
-  })
+export function Form() {
+  const [email, setEmail] = useState<string>('')
+  const [password, setPassword] = useState<string>('')
+  const [userData, setUserData] = useState<null | UserData >()
+
+  // useEffect(() =>{
+  //   const getData = async () => {
+  //     const data: any | UserData = await api
+  //     setUserData(data)
+  //   }
+  //   getData()
+  // }, [])
 
   return (
     <Flex my={4} width='full' align='center' justifyContent='center'>

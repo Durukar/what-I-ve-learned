@@ -39,15 +39,23 @@ export function DrawerDioBank() {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>{`Relase`}</DrawerHeader>
+          <DrawerHeader>{`Relases`}</DrawerHeader>
           <DrawerBody>
 
-          <Box>
-            <Divider/>
-            <UnorderedList>
-              <h2><strong>Alpha 0.0.1</strong></h2>
-              <ListItem>Pagina de login simples</ListItem>
-              <ListItem>Botao para conferir as ultimas releases</ListItem>
+            <Box>
+              <Divider />
+              <UnorderedList>
+                <Box mt={2}>
+                  <h2><strong>Alpha 0.0.2</strong></h2>
+                  <ListItem >Adicionado validação</ListItem>
+                  <ListItem>Criado API interna</ListItem>
+                  <Divider mt={2} />
+                </Box>
+                <Box mt={2}>
+                  <h2><strong>Alpha 0.0.1</strong></h2>
+                  <ListItem>Pagina de login simples</ListItem>
+                  <ListItem>Botao para conferir as ultimas releases</ListItem>
+                </Box>
               </UnorderedList>
             </Box>
 
