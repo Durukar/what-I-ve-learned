@@ -12,11 +12,20 @@ import {
 } from "@chakra-ui/react";
 import { login } from "../../services/login";
 import { DrawerDioBank } from '../Drawer/DrawerDioBank'
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import {api} from '../../api/api'
 
 export function Form() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+
+  useEffect(() =>{
+    const getData = async () => {
+      const data = await api
+      console.log(data)
+    }
+    getData()
+  })
 
   return (
     <Flex my={4} width='full' align='center' justifyContent='center'>
