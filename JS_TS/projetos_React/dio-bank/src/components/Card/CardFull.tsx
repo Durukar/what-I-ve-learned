@@ -1,4 +1,4 @@
-import { Card, CardBody, CardFooter, ChakraProvider, Box, Divider } from '@chakra-ui/react'
+import { Card, CardBody,ChakraProvider, Box} from '@chakra-ui/react'
 import { Form } from '../Login/Form'
 import { Footer } from '../Footer/Footer'
 
