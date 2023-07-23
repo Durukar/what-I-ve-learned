@@ -8,15 +8,16 @@ import {
   Button,
   Divider,
   Badge,
-  Tooltip
+  Tooltip,
+  CircularProgress,
 } from "@chakra-ui/react";
 import { login } from "../../services/login";
 import { DrawerDioBank } from '../Drawer/DrawerDioBank'
 import { useState, useEffect } from "react";
-import {api} from '../../api/api'
+import { api } from '../../api/api'
 
 interface UserData {
-  email:string
+  email: string
   password: string
   name: string
 }
@@ -24,15 +25,17 @@ interface UserData {
 export function Form() {
   const [email, setEmail] = useState<string>('')
   const [password, setPassword] = useState<string>('')
-  const [userData, setUserData] = useState<null | UserData >()
+  const [userData, setUserData] = useState<null | UserData>()
 
-  // useEffect(() =>{
-  //   const getData = async () => {
-  //     const data: any | UserData = await api
-  //     setUserData(data)
-  //   }
-  //   getData()
-  // }, [])
+  useEffect(() => {
+    const getData = async () => {
+      const data: any | UserData = await api
+      setUserData(data)
+    }
+    getData()
+  }, [])
+
+  console.log(useState)
 
   return (
     <Flex my={4} width='full' align='center' justifyContent='center'>
@@ -45,18 +48,22 @@ export function Form() {
         <Divider mt={1} />
         <Flex>
           <Box ml={3}>
-            <Heading>Dio Bank</Heading>
+            <Heading>Dio Bank {
+          userData === null || 
+          userData === undefined && 
+          <CircularProgress isIndeterminate color='green.300' />
+        }</Heading> 
           </Box>
         </Flex>
         <Box my={4} textAlign='left'>
           <form>
             <FormControl isRequired>
               <FormLabel>Email</FormLabel>
-              <Input type='email' placeholder='test@test.com' value={email} onChange={(e) => setEmail(e.target.value)}/>
+              <Input type='email' placeholder='test@test.com' value={email} onChange={(e) => setEmail(e.target.value)} />
             </FormControl>
             <FormControl mt={6} isRequired>
               <FormLabel>Password</FormLabel>
-              <Input type='password' placeholder='*****' value={password} onChange={(e) => setPassword(e.target.value)}/>
+              <Input type='password' placeholder='*****' value={password} onChange={(e) => setPassword(e.target.value)} />
             </FormControl>
             <Button onClick={() => login(email, password)} type="submit" colorScheme="teal" variant="outline" width="full" mt={4}>
               Sign In
