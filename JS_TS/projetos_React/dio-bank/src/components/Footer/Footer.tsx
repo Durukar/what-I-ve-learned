@@ -2,9 +2,6 @@ import {
   Box,
   Text
 } from '@chakra-ui/react';
-import { FaGithub } from 'react-icons/fa';
-import { BsDiscord } from 'react-icons/bs';
-
 import styles from './Footer.module.css'
 
 export const Footer = () => {

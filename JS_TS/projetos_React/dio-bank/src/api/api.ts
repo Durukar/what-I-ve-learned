@@ -1,6 +1,6 @@
 const conta = {
-  email: 'lucasdavila@snews.tv',
-  password: 'radio@TV',
+  email: 'teste@teste.com',
+  password: 'teste@teste',
   name: 'Lucas Davila'
 }
 

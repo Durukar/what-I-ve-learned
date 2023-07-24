@@ -9,7 +9,6 @@ import {
   Divider,
   Badge,
   Tooltip,
-  CircularProgress,
 } from "@chakra-ui/react";
 import { login } from "../../services/login";
 import { DrawerDioBank } from '../Drawer/DrawerDioBank'
@@ -48,11 +47,7 @@ export function Form() {
         <Divider mt={1} />
         <Flex>
           <Box ml={3}>
-            <Heading>Dio Bank {
-          userData === null || 
-          userData === undefined && 
-          <CircularProgress isIndeterminate color='green.300' />
-        }</Heading> 
+            <Heading>Dio Bank </Heading> 
           </Box>
         </Flex>
         <Box my={4} textAlign='left'>
@@ -77,3 +72,9 @@ export function Form() {
 
 // Event prevent
 //onClick={(e):any =>{e.preventDefault()}}
+// // condicional rendering
+// {
+//   userData === null || 
+//   userData === undefined && 
+//   <CircularProgress isIndeterminate color='green.300' />
+// }

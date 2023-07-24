@@ -5,8 +5,8 @@ describe('login', () => {
 
   const mockAlert = jest.fn()
   window.alert = mockAlert
-  const mockEmail = 'lucasdavila@snews.tv'
-  const mockPassword = 'radio@TV'
+  const mockEmail = 'teste@teste.com'
+  const mockPassword = 'teste@teste'
   it('Deve exibir um alert com boas vindas caso o email seja valido', async () =>{
     await login(mockEmail, mockPassword)
     expect(mockAlert).toHaveBeenCalledWith(`Bem vindo ${mockEmail}!`)
