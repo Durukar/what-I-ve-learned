@@ -11,7 +11,6 @@ import {
   Tooltip,
 } from "@chakra-ui/react";
 import { login } from "../../services/login";
-import { DrawerDioBank } from '../Drawer/DrawerDioBank'
 import { useState, useEffect } from "react";
 import { api } from '../../api/api'
 
@@ -34,8 +33,6 @@ export function Form() {
     getData()
   }, [])
 
-  console.log(useState)
-
   return (
     <Flex my={4} width='full' align='center' justifyContent='center'>
       <Box p={8} maxWidth="500px" borderWidth={1} borderRadius={8} boxShadow="lg">
@@ -43,7 +40,6 @@ export function Form() {
           Alpha Build
         </Badge>
         </Tooltip>
-        <DrawerDioBank />
         <Divider mt={1} />
         <Flex>
           <Box ml={3}>
